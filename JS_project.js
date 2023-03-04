@@ -63,7 +63,7 @@ function welcome() {
 setTimeout(function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     welcome()
-}, 200);
+}, 400);
 
 setTimeout(function () {
     play.addEventListener("click", startGame)
