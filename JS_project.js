@@ -318,6 +318,10 @@ function updateCanvas() {
         gameAudio.pause()
         audio.src = `${sounds[1]}`
         musicStart(1)
+        if (s > highScore) {
+            highScore = s;
+            localStorage.setItem("highScore", `${s}`);
+        }
         pauseGame();
     }
     if (rightPressed) {
